@@ -1,0 +1,42 @@
+/* yes button */
+.yes-button {
+    margin-right: 100px;
+    width: 200px;
+    height: 80px;
+    background-color: rgb(114, 235, 114);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgb(43, 100, 43);
+    font-size: xx-large;
+}
+
+.yes-button:hover {
+    background-color: rgb(90, 177, 90);
+}
+
+/* no button */
+.no-button {
+    margin-right: 5px;
+    width: 200px;
+    height: 80px;
+    background-color: rgb(235, 114, 114);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgb(146, 72, 72);
+    font-size: xx-large;
+}
+
+.no-button:hover {
+    background-color: rgb(170, 83, 83);
+}
+
+/* backgrounds */
+.will-you-be-my-valentine {
+    background-image: url("./../assets/willyoubemyvalentine.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
