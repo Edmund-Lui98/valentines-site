@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/REPO%20NAME/static/css/main.c930ded6.css",
+    "main.js": "/REPO%20NAME/static/js/main.dc3f5506.js",
+    "static/js/787.b63bb383.chunk.js": "/REPO%20NAME/static/js/787.b63bb383.chunk.js",
+    "static/media/willyoubemyvalentine.jpg": "/REPO%20NAME/static/media/willyoubemyvalentine.b762d9591127a0a23b32.jpg",
+    "index.html": "/REPO%20NAME/index.html",
+    "main.c930ded6.css.map": "/REPO%20NAME/static/css/main.c930ded6.css.map",
+    "main.dc3f5506.js.map": "/REPO%20NAME/static/js/main.dc3f5506.js.map",
+    "787.b63bb383.chunk.js.map": "/REPO%20NAME/static/js/787.b63bb383.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c930ded6.css",
+    "static/js/main.dc3f5506.js"
+  ]
+}
