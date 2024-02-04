@@ -1,4 +1,4 @@
-// 1. who did the raptors play and what was the score of the raptors game that we watched together?
+// 1. who did the raptors play against and what was the score of the raptors game that we watched together?
 
 // Milwaukee Bucks 111-130
 

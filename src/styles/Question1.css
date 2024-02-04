@@ -1,0 +1,31 @@
+/* backgrounds */
+.raps-court {
+    background-image: url("./../assets/rapsCourt.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100vh;
+}
+
+.top-text {
+    font-size: 36px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+}
+
+.left-button,
+.right-button {
+    margin: 0 10px;
+}
+
+.bottom-button-container {
+    margin-top: 50px;
+}

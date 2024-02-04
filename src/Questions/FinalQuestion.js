@@ -19,7 +19,8 @@ export default function FinalQuestion() {
         <div className='will-you-be-my-valentine'>
             <div style={clicks === 0 ? ogStyle : afterFirstClick}>
                 <button className='yes-button'>
-                    Yes
+                    Yes <br />
+                    <div style={{ fontSize: '12px' }}>(i dare you to click no)</div>
                 </button>
                 <button className='no-button' onClick={moveButton}>
                     No
