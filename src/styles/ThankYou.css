@@ -1,0 +1,25 @@
+.details {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 10vh;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.password {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.password-container {
+    font-size: xx-large;
+    margin-top: 10vh;
+    background-color: rgba(0, 0, 0, 0.685);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
