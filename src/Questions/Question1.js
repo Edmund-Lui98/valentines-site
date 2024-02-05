@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './../styles/Question1.css'
 
 export default function Question1({ moveOn }) {
-    const [team, setTeam] = useState('Bucks')
+    const [team, setTeam] = useState('')
     const [rapsScore, setRapsScore] = useState(null)
     const [bucksScore, setBucksScore] = useState(null)
     const [error, setError] = useState(false)
@@ -24,17 +24,25 @@ export default function Question1({ moveOn }) {
             <div className="top-text">
                 Question 1
             </div>
-            <div className="top-text">
+            <div className="question">
                 Who did the raptors play and what was the score of the game?
             </div>
             <div className="button-container">
-                <input className="left-button" type='number' onChange={(e) => { setRapsScore(e.target.value) }} />
-                <input className="right-button" type='number' onChange={(e) => { setBucksScore(e.target.value) }} />
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div className='headers'>Team</div>
+                    <input className="left-button" value="Raptors" placeholder='Team' />
+                    <input className="left-button" placeholder='team' onChange={(e) => { setTeam(e.target.value) }} />
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div className='headers'>Score</div>
+                    <input className="right-button" type='number' placeholder='score' onChange={(e) => { setRapsScore(e.target.value) }} />
+                    <input className="right-button" type='number' placeholder='score' onChange={(e) => { setBucksScore(e.target.value) }} />
+                </div>
             </div>
             <div className="bottom-button-container">
                 <button className="bottom-button" onClick={onSubmit}>Submit</button>
             </div>
-            {error ? <div>
+            {error ? <div className='error'>
                 Error: wrong!!
             </div> : null}
         </div>

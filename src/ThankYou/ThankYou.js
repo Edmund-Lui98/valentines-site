@@ -1,13 +1,36 @@
-// 1. who did the raptors play against and what was the score of the raptors game that we watched together?
+import { useEffect, useState } from "react"
+import '../styles/ThankYou.css'
 
-// Milwaukee Bucks 111-130
+export default function ThankYou({ moveOn }) {
+    const [password, setPassword] = useState(null)
+    const [correct, setCorrect] = useState(false)
 
-// 2. what day did we first see each other?
+    useEffect(() => {
+        if (password === "iloveedmund") {
+            setCorrect(true)
+        }
+    }, [password])
 
-// 09/26/2022
-
-// 3. Where was I when you got pochi?
-
-// retreat
-
-// 4. What was the name of the maze we went through during halloween?
+    return (
+        <div className='intro'>
+            <div className="top-text">
+                Congratulations!
+            </div>
+            <div className="question">
+                Please text the code <b>"4383845"</b> to (647)-706-8738 claim your one time passcode
+            </div>
+            {correct ? null : <div className="password-container">
+                Password: <input type="password" className="password" onChange={(e) => { setPassword(e.target.value) }} />
+            </div>}
+            {correct ?
+                <div className="details">
+                    Who: Me & You <br />
+                    What: Going out for dinner<br />
+                    When: Wednesday at 8pm<br />
+                    Where: Piano Piano<br />
+                    Why: To have a great time with my girlfriend<br />
+                    How: Lets see if I can work from home hehe<br />
+                </div> : null}
+        </div>
+    )
+}

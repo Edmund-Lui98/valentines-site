@@ -1,0 +1,10 @@
+/* backgrounds */
+.opera {
+    background-image: url("./../assets/dragonBoatOpera.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
